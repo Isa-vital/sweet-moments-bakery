@@ -1,109 +1,99 @@
-# Sweet Moments Bakery
+# Sweet Moments Bakery Website
 
-A premium, responsive five-page e-commerce frontend for a proposed Kampala bakery. This project was created for the BUC3106 E-Commerce Capstone Project at Makerere University Business School (MUBS).
+This is a five-page demonstration website for the BUC3106 E-Commerce Capstone Project at Makerere University Business School (MUBS).
 
-> Student project only. The website does not take live orders, collect customer information or process payments.
+Sweet Moments Bakery is a proposed bakery business in Kampala, Uganda. The website lets visitors explore products, prices, proposed ordering steps, payment methods, delivery information and draft policies.
 
-## Pages
+Important: this is a student project. It does not accept real orders, collect customer details or process payments.
 
-- `index.html` — brand-led home page
-- `products.html` — searchable and filterable product catalogue
-- `about.html` — proposed story, mission, vision and customer segments
-- `order.html` — ordering demonstration, sample payment methods and delivery/refund guidance
-- `policies.html` — draft privacy, terms, delivery, returns and contact policies
+## Website files
 
-## Technology
+- `index.html` — the Home page.
+- `products.html` — all ten products, proposed prices, search and category filters.
+- `about.html` — the proposed business concept, mission, vision, values and customers.
+- `pay.html` — proposed ordering steps, sample payment methods, verification, refunds and delivery.
+- `policies.html` — proposed privacy, terms, delivery and refund policies.
+- `style.css` — all colours, spacing, layouts, mobile design and hover/focus styles.
+- `script.js` — the mobile menu and product search/filter functions.
+- `images/` — local, optimised website images and their source record.
+- `TESTING_RECORD.md` — a blank sheet for the required five-person test.
+- `AI_USE_LOG.md` — prompts and AI use notes for the coursework record.
 
-- Semantic HTML5
-- Tailwind CSS 3
-- Vanilla ES modules
-- Vite multi-page build
-- Lucide icons
+## How to open the website
 
-## Run locally
+1. Open the project folder.
+2. Double-click `index.html`.
+3. The website will open in your normal web browser.
 
-Requires Node.js 20 or newer.
+No installation, command, server or build step is needed. An internet connection is useful for the Google fonts, but system-font fallbacks keep the site usable without them.
 
-```bash
-npm install
-npm run dev
-```
+## Change a product name or price
 
-Open the local URL printed by Vite.
+1. Open `script.js` in a text editor.
+2. Find the `products` list.
+3. Find the product you want to change.
+4. Change the text after `name:` or the number after `price:`.
+5. Save the file and refresh `products.html`.
 
-## Build and validate
+The four featured products on the Home page are written directly in `index.html`. Update those too if one of their prices changes.
 
-```bash
-npm run check
-npm run build
-npm run preview
-```
+## Replace an image
 
-The production output is written to `dist/`.
+1. Prepare a JPG or WebP image with a descriptive filename.
+2. Keep it approximately 1,800 pixels or less on its longest side.
+3. Aim for a file size below 300 KB where quality allows.
+4. Put it inside `images/`.
+5. Update the matching `src="images/filename.webp"` path in the HTML or `script.js`.
+6. Update `images/SOURCES.md`.
 
-## Product data
+Do not present stock or generated images as photographs of the real bakery.
 
-Product names, descriptions, categories, prices and image mappings live in `src/js/products.js`. Update that file to change the catalogue; `src/js/products-page.js` handles rendering, search, filtering and details.
+## WhatsApp ordering
 
-All supplied prices are presented as proposed coursework prices in UGX. Do not add a live checkout or payment credential without a separate, properly reviewed implementation.
+No approved business phone number was supplied. Buttons therefore lead to `pay.html` and explain the proposed process. Do not invent or publish a personal number.
 
-## Ordering configuration
+When the group approves a business number, a link can use `https://wa.me/256XXXXXXXXX`. Use digits only and test it before publishing.
 
-No business WhatsApp number was supplied. Product ordering buttons therefore show a demonstration notice instead of linking to an invented number. When an approved business number becomes available, update the shared ordering handler in `src/js/main.js`.
+## Publish on GitHub Pages
 
-## Visual assets
+1. Create a public GitHub repository.
+2. Upload the five HTML files, `style.css`, `script.js`, `images/` and documentation.
+3. Open the repository **Settings**.
+4. Select **Pages**.
+5. Choose **Deploy from a branch**.
+6. Choose the `main` branch and root (`/`) folder.
+7. Save, wait for the published link, then test every page.
 
-The product and hero images are AI-generated illustrative assets, not photographs of a real Sweet Moments Bakery. Their generation notes are documented in `docs/ASSETS.md`.
+No build command is required.
 
-Run `node scripts/optimize-assets.mjs` after replacing a source PNG. The website references WebP versions for delivery performance while retaining original PNG source assets.
+## Required screenshots
 
-## Deployment
-
-### GitHub Pages
-
-1. Run `npm run build`.
-2. Configure GitHub Actions to build the project and upload `dist/` as the Pages artifact.
-3. The Vite `base: './'` setting supports repository subpaths.
-
-### Cloudflare Pages
-
-1. Connect the Git repository in Cloudflare Pages.
-2. Set the build command to `npm run build`.
-3. Set the output directory to `dist`.
-4. Use a current Node.js runtime.
-
-No deployment or remote push has been performed.
+1. Open the website in Chrome or Edge.
+2. Press `F12` to open Developer Tools.
+3. Select the device toolbar icon.
+4. Capture a mobile view around 390 px wide.
+5. Capture a desktop view around 1440 px wide.
+6. Include the screenshots in the coursework evidence as instructed.
 
 ## Proposed domain
 
-`sweetmomentsbakery.co.ug` is a sensible proposed domain because it matches the business name, communicates the bakery category and uses Uganda's commercial namespace. It is a suggestion only; availability and ownership have not been checked or claimed.
+`sweetmomentsbakery.co.ug` would be memorable, relevant to the business name and connected to Uganda. This is only a suggestion; availability and ownership have not been checked or claimed.
 
-## Known limitations
+## Limitations
 
-- The business is proposed and no verified operating contact, address or social profile is published.
-- WhatsApp ordering is demonstrated but not active.
-- Payment details are conspicuous samples and no payment gateway exists.
-- Product ingredients, allergens, customisations and availability require future confirmation.
-- Delivery fees and timelines are not calculated.
-- Generated images represent product categories and may be reused across catalogue entries.
-- External Google Fonts require a network connection; system fallbacks remain usable when offline.
+- Sweet Moments Bakery is proposed, not a verified operating bakery.
+- Payment details are samples and do not accept money.
+- There is no database, cart, checkout, account system or payment gateway.
+- No approved phone number, email or physical shop address was supplied.
+- WhatsApp ordering remains informational until the group approves a business number.
+- Product imagery is illustrative and reused for related product categories.
+- Ingredients, allergens, custom designs and availability need future confirmation.
+- Delivery fees and times are not calculated or guaranteed.
 
-## Project structure
+## Before submission
 
-```text
-sweet_moments/
-├── index.html
-├── products.html
-├── about.html
-├── order.html
-├── policies.html
-├── src/
-│   ├── assets/images/
-│   ├── js/main.js
-│   ├── js/products.js
-│   ├── js/products-page.js
-│   └── styles.css
-├── scripts/
-├── docs/
-└── vite.config.js
-```
+- Complete real testing with five people using `TESTING_RECORD.md`.
+- Add approved contact details only if the group may publish them.
+- Replace illustrative images with approved bakery photography if available.
+- Review the policies with the lecturer; they are not legal advice.
+- Test all pages again after any change.
