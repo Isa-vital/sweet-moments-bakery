@@ -2,6 +2,8 @@
 
 This is a five-page demonstration website for the BUC3106 E-Commerce Capstone Project at Makerere University Business School (MUBS).
 
+**Live website:** https://isa-vital.github.io/sweet-moments-bakery/
+
 Sweet Moments Bakery is a proposed bakery business in Kampala, Uganda. The website lets visitors explore products, build a simulated cart, review a frontend-only checkout, compare proposed payment methods, and read delivery information and draft policies.
 
 Important: this is a student project. It does not accept real orders, collect customer details or process payments.
@@ -65,11 +67,13 @@ Do not present stock or generated images as photographs of the real bakery.
 
 ## WhatsApp ordering
 
-No approved business phone number was supplied. Buttons therefore lead to `pay.html` and explain the proposed process. Do not invent or publish a personal number.
+The group supplied and approved `+256 702 068 695` as the Sweet Moments Bakery WhatsApp ordering number. Website links use `https://wa.me/256702068695` with a prefilled enquiry message.
 
-When the group approves a business number, a link can use `https://wa.me/256XXXXXXXXX`. Use digits only and test it before publishing.
+The simulated checkout can prepare a cart summary for WhatsApp after the payment demonstration stops. Opening the link does not process payment or create an order on the website; the customer must choose to send the message, and availability, delivery and payment arrangements still require confirmation.
 
 ## Publish on GitHub Pages
+
+The project is hosted at `https://isa-vital.github.io/sweet-moments-bakery/`. After any approved update, publish the changed files and repeat the phone, desktop, link and checkout checks before capturing coursework evidence.
 
 1. Create a public GitHub repository.
 2. Upload the five HTML files, `style.css`, `script.js`, `images/` and documentation.
@@ -99,8 +103,8 @@ No build command is required.
 - Sweet Moments Bakery is proposed, not a verified operating bakery.
 - Payment details are samples and do not accept money.
 - The cart and checkout are browser-only demonstrations. There is no database, account system, payment gateway or real order processing.
-- No approved phone number, email or physical shop address was supplied.
-- WhatsApp ordering remains informational until the group approves a business number.
+- The approved WhatsApp ordering number is available, but no public business email or physical shop address was supplied.
+- WhatsApp opens outside the website and remains an enquiry/confirmation channel rather than an integrated payment gateway.
 - Product imagery is illustrative and reused for related product categories.
 - Ingredients, allergens, custom designs and availability need future confirmation.
 - Delivery fees and times are not calculated or guaranteed.

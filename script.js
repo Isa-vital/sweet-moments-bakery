@@ -83,6 +83,7 @@
   };
 
   var CART_KEY = 'sweetMomentsCartV1';
+  var WHATSAPP_NUMBER = '256702068695';
   var memoryCart = {};
 
   function getProduct(productId) {
@@ -132,6 +133,16 @@
       items.push({ product: product, quantity: quantity, subtotal: product.price * quantity });
     });
     return { items: items, itemCount: itemCount, total: total };
+  }
+
+  function buildWhatsAppEnquiryUrl(details) {
+    var message = ['Hello Sweet Moments Bakery, I would like to enquire about availability for:'];
+    details.items.forEach(function (item) {
+      message.push(item.quantity + ' × ' + item.product.name + ' — ' + formatPrice(item.subtotal));
+    });
+    message.push('Estimated product total: ' + formatPrice(details.total));
+    message.push('Please confirm availability, delivery arrangements and the appropriate payment method.');
+    return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message.join('\n'));
   }
 
   function ensureCartInterface() {
@@ -422,6 +433,8 @@
     if (!details.items.length) return;
     var method = paymentMethods[selectedPaymentKey()];
     dialog.querySelector('[data-simulation-summary]').textContent = 'You reviewed ' + details.itemCount + (details.itemCount === 1 ? ' item' : ' items') + ' totalling ' + formatPrice(details.total) + ' with ' + method.name + ' selected. No further action was taken.';
+    var whatsappLink = dialog.querySelector('[data-whatsapp-order]');
+    if (whatsappLink) whatsappLink.href = buildWhatsAppEnquiryUrl(details);
     if (typeof dialog.showModal === 'function') dialog.showModal();
     else dialog.setAttribute('open', '');
   }

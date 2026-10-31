@@ -4,11 +4,13 @@ Use this blank template with five people who have not seen the website. Do not i
 
 ## Test tasks
 
-1. Add two products, change a quantity and confirm the UGX total changes.
-2. Open the simulated checkout and switch between two payment methods.
-3. Reach the final safety notice and explain whether a payment or order was created.
+Give each tester the live URL without explaining where anything is. The lecturer requires these three tasks:
 
-| Tester | Device used | Task 1 completed? | Task 2 completed? | Task 3 completed? | Time/notes | Problems observed |
+1. Find the price of a product selected by the test coordinator.
+2. Find how a customer would pay.
+3. Find the delivery information.
+
+| Tester | Device used | Product price found? | Payment information found? | Delivery information found? | Time/route taken | Problems observed or exact comment |
 |---|---|---|---|---|---|---|
 | Person 1 |  |  |  |  |  |  |
 | Person 2 |  |  |  |  |  |  |
@@ -25,6 +27,8 @@ Record at least three genuine problems and the changes made.
 | 1. |  |  |  |
 | 2. |  |  |  |
 | 3. |  |  |  |
+
+Do not invent participants, comments or results. After applying each fix, ask at least one tester to repeat the affected task and record the outcome.
 
 ## Final checks
 
@@ -44,5 +48,7 @@ Record at least three genuine problems and the changes made.
 - [ ] Payment details are visibly marked SAMPLE.
 - [ ] The student disclaimer appears on every page.
 - [ ] No real money or customer information is collected.
+- [ ] The live URL uses HTTPS and shows a padlock.
+- [ ] The current published pages match the final local files.
 - [ ] The cart and checkout have no horizontal overflow at 320 px, 390 px and desktop widths.
 - [ ] The catalogue changes between three, two and one columns at appropriate screen sizes.
