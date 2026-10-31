@@ -11,6 +11,7 @@ OpenAI Codex and OpenAI built-in image generation.
 - Draft student-project copy and proposed policies.
 - Generate illustrative bakery imagery.
 - Check links, prices, disclaimers and JavaScript behavior.
+- Add and test a frontend-only cart and simulated checkout without collecting personal information or processing payment.
 
 ## Main prompt
 

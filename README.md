@@ -2,19 +2,19 @@
 
 This is a five-page demonstration website for the BUC3106 E-Commerce Capstone Project at Makerere University Business School (MUBS).
 
-Sweet Moments Bakery is a proposed bakery business in Kampala, Uganda. The website lets visitors explore products, prices, proposed ordering steps, payment methods, delivery information and draft policies.
+Sweet Moments Bakery is a proposed bakery business in Kampala, Uganda. The website lets visitors explore products, build a simulated cart, review a frontend-only checkout, compare proposed payment methods, and read delivery information and draft policies.
 
 Important: this is a student project. It does not accept real orders, collect customer details or process payments.
 
 ## Website files
 
 - `index.html` — the Home page.
-- `products.html` — all ten products, proposed prices, search and category filters.
+- `products.html` — all ten products, proposed prices, search, category filters and the simulated cart.
 - `about.html` — the proposed business concept, mission, vision, values and customers.
-- `pay.html` — proposed ordering steps, sample payment methods, verification, refunds and delivery.
+- `pay.html` — simulated checkout, order summary, sample payment methods, verification, refunds and delivery.
 - `policies.html` — proposed privacy, terms, delivery and refund policies.
 - `style.css` — all colours, spacing, layouts, mobile design and hover/focus styles.
-- `script.js` — the mobile menu and product search/filter functions.
+- `script.js` — the mobile menu, product catalogue, local cart and simulated checkout functions.
 - `images/` — local, optimised website images and their source record.
 - `TESTING_RECORD.md` — a blank sheet for the required five-person test.
 - `AI_USE_LOG.md` — prompts and AI use notes for the coursework record.
@@ -26,6 +26,18 @@ Important: this is a student project. It does not accept real orders, collect cu
 3. The website will open in your normal web browser.
 
 No installation, command, server or build step is needed. An internet connection is useful for the Google fonts, but system-font fallbacks keep the site usable without them.
+
+## Simulated cart and checkout
+
+- The cart stores only product IDs and quantities in the browser's `localStorage` under `sweetMomentsCartV1`.
+- Customers can add products, adjust quantities, remove products and see totals in Uganda Shillings.
+- The checkout offers MTN Mobile Money, Airtel Money, Bank Transfer and Cash on Delivery as non-functional demonstrations.
+- Every method shows three sample steps plus proposed verification and refund guidance.
+- The journey deliberately stops at a safety notice before any payment confirmation.
+- No names, phone numbers, addresses, card details, PINs or OTPs are requested or stored.
+- No network payment request, database order or real confirmation is created.
+
+To reset the demonstration manually, clear the site's browser storage or use **Clear cart** in the cart drawer.
 
 ## Change a product name or price
 
@@ -83,7 +95,7 @@ No build command is required.
 
 - Sweet Moments Bakery is proposed, not a verified operating bakery.
 - Payment details are samples and do not accept money.
-- There is no database, cart, checkout, account system or payment gateway.
+- The cart and checkout are browser-only demonstrations. There is no database, account system, payment gateway or real order processing.
 - No approved phone number, email or physical shop address was supplied.
 - WhatsApp ordering remains informational until the group approves a business number.
 - Product imagery is illustrative and reused for related product categories.
