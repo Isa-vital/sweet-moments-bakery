@@ -31,6 +31,10 @@ Record at least three genuine problems and the changes made.
 - [ ] Mobile navigation works.
 - [ ] All five pages open.
 - [ ] Product search and filters work.
+- [ ] Category, price-range and sorting controls return the expected products.
+- [ ] Product details open, close and remain usable with keyboard controls.
+- [ ] Product-detail quantity selection adds the correct number of items.
+- [ ] The mobile filter panel opens and closes accessibly.
 - [ ] Products can be added, increased, decreased and removed from the cart.
 - [ ] Cart quantities and UGX totals stay correct on Products and How to Pay pages.
 - [ ] The cart remains available when moving between the two pages.
@@ -41,3 +45,4 @@ Record at least three genuine problems and the changes made.
 - [ ] The student disclaimer appears on every page.
 - [ ] No real money or customer information is collected.
 - [ ] The cart and checkout have no horizontal overflow at 320 px, 390 px and desktop widths.
+- [ ] The catalogue changes between three, two and one columns at appropriate screen sizes.

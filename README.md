@@ -9,7 +9,7 @@ Important: this is a student project. It does not accept real orders, collect cu
 ## Website files
 
 - `index.html` — the Home page.
-- `products.html` — all ten products, proposed prices, search, category filters and the simulated cart.
+- `products.html` — all ten products, desktop/mobile catalogue filters, price range, sorting, product details and the simulated cart.
 - `about.html` — the proposed business concept, mission, vision, values and customers.
 - `pay.html` — simulated checkout, order summary, sample payment methods, verification, refunds and delivery.
 - `policies.html` — proposed privacy, terms, delivery and refund policies.
@@ -31,6 +31,9 @@ No installation, command, server or build step is needed. An internet connection
 
 - The cart stores only product IDs and quantities in the browser's `localStorage` under `sweetMomentsCartV1`.
 - Customers can add products, adjust quantities, remove products and see totals in Uganda Shillings.
+- The catalogue supports search, category and maximum-price filters plus name and price sorting.
+- Product details open in an accessible same-page dialog, preserving the lecturer-required five-page structure.
+- Product-detail quantities can be added directly to the same cart used by checkout.
 - The checkout offers MTN Mobile Money, Airtel Money, Bank Transfer and Cash on Delivery as non-functional demonstrations.
 - Every method shows three sample steps plus proposed verification and refund guidance.
 - The journey deliberately stops at a safety notice before any payment confirmation.

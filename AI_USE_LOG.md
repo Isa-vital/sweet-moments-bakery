@@ -12,6 +12,7 @@ OpenAI Codex and OpenAI built-in image generation.
 - Generate illustrative bakery imagery.
 - Check links, prices, disclaimers and JavaScript behavior.
 - Add and test a frontend-only cart and simulated checkout without collecting personal information or processing payment.
+- Redesign the catalogue and product-detail experience from supplied e-commerce layout references while preserving the Sweet Moments visual identity.
 
 ## Main prompt
 
